@@ -29,7 +29,7 @@ $ find . -type f -name "*.cpp" | wc -l`
 `$ grep -rnw ./ -e boost::asio`  
 8. Скомпилирутйе *boost*. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).  
 `$ ./bootstrap.sh —prefix=boost_output`  
-`$ ./b2 install -j8``  
+`$ ./b2 install -j8`  
 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию `~/boost-libs`.  
 `$ mkdir ~/boost-libs`  
 `$ mv *.* ~/boost-libs`  
