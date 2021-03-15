@@ -20,8 +20,10 @@ $ ls | wc -l`
 4. Подсчитайте количество файлов в директории `~/boost_1_69_0` **включая** вложенные директории.  
 `find ./ -type f | wc -l`  
 5. Подсчитайте количество заголовочных файлов, файлов с расширением `.cpp`, сколько остальных файлов (не заголовочных и не `.cpp`).  
-`$ find . -type f -name "*.cpp" | wc -l  
-$ find -not -name '*.cpp' -and -not -name '*.h' -and -not -name '*.hpp' | wc -l`  
+```
+$ find . -type f -name "*.cpp" | wc -l  
+$ find -not -name '*.cpp' -and -not -name '*.h' -and -not -name '*.hpp' | wc -l
+```. 
 6. Найдите полный путь до файла `any.hpp` внутри библиотеки *boost*.  
 `$ find ~/boost_1_69_0 -name "any.hpp"`  
 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.  
