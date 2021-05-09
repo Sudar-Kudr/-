@@ -41,34 +41,34 @@ $ mv node-v6.11.5-linux-x64 node                                   #переим
 
 ```sh
 $ ls node/bin                              #выводим содержимое папки
-$ echo ${PATH}                            #выводим в терминал список каталогов, разделенных двоеточиями
-$ export PATH=${PATH}:`pwd`/node/bin     #
-$ echo ${PATH}                          #
-$ mkdir scripts                        #
-$ cat > scripts/activate<<EOF         #
+$ echo ${PATH}                            #посмотреть содержимое переменной PATH
+$ export PATH=${PATH}:`pwd`/node/bin     #добавляем новый путь к переменной PATH
+$ echo ${PATH}                          #убедимся, что в переменной PATH содержится имя, добавленной, папки
+$ mkdir scripts                        #создаем scripts
+$ cat > scripts/activate<<EOF         #создаем файл и пишем данные от EOF до EOF
 export PATH=\${PATH}:`pwd`/node/bin
 EOF
-$ source scripts/activate          #
+$ source scripts/activate          #выполням команду из файла activate
 ```
 
 ```sh
-$ gem install gist
+$ gem install gist     #установка последней версии gist
 ```
 
 ```sh
-$ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)
+$ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)   #берем права для директории
 ```
 
 ## Report
 
 ```sh
-$ export LAB_NUMBER=01
-$ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
-$ mkdir reports/lab${LAB_NUMBER}
-$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
-$ cd reports/lab${LAB_NUMBER}
-$ edit REPORT.md
-$ gist REPORT.md
+$ export LAB_NUMBER=01                                                          #присваиваем 01 в переменную LAB_NUMBER
+$ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER} #клонируем из ссылки в директорию (в наше случае-tasks/lab01)
+$ mkdir reports/lab${LAB_NUMBER}                                              #создаем директорию (в наше случае- lab01)                                      
+$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md     #спускаемся в директорию (в наше случае- lab01)
+$ cd reports/lab${LAB_NUMBER}                                               #копируем из одной директории в другую
+$ edit REPORT.md                                                           #редактируем REPORT.md
+$ gist REPORT.md                                                          #сохраняем REPORT.md
 ```
 
 ## Links
