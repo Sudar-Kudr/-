@@ -11,8 +11,8 @@
 ## Tutorial
 
 ```bash
-$ export GITHUB_USERNAME=<имя_пользователя>    #присваиваем <имя_пользователя> в переменную GITHUB_USERNAME
-$ export GIST_TOKEN=<сохраненный_токен>       #присваиваем <сохраненный_токен> в переменную GIST_TOKEN
+$ export GITHUB_USERNAME=<имя_пользователя>    #присваиваем имя пользователя GitHub в переменную GITHUB_USERNAME
+$ export GIST_TOKEN=<сохраненный_токен>       #присваиваем сохраненный токен в переменную GIST_TOKEN
 $ alias edit=<nano|vi|vim|subl>              #выбираем какой редактор хотим открыть
 ```
 
