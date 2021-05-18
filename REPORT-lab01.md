@@ -64,7 +64,7 @@ $ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)   #берем права для �
 ```sh
 $ export LAB_NUMBER=01                                                          #присваиваем 01 в переменную LAB_NUMBER
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER} #клонируем из ссылки в директорию (в наше случае-tasks/lab01)
-$ mkdir reports/lab${LAB_NUMBER}                                              #создаем директорию (в наше случае- lab01)                                      
+$ mkdir reports/lab${LAB_NUMBER}                                              #создаем директорию для отчета(reports) и создаем в ней папку (в наше случае- lab01)                                      
 $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md     #спускаемся в директорию (в наше случае- lab01)
 $ cd reports/lab${LAB_NUMBER}                                               #копируем из одной директории в другую
 $ edit REPORT.md                                                           #редактируем REPORT.md
